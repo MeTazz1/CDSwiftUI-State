@@ -10,6 +10,11 @@ import SwiftUI
 
 struct SliderView: View {
     var name: String
+    
+    // The @Binding keyword reuse the two way binding between the State property
+    // and the view it's used by. This @Binding actually refers to the @State property wrapper
+    // that we created in the ContentView. You will access to the same property
+    // that SwiftUI is managing for you
     @Binding var value: Double
     
     var body: some View {
