@@ -31,13 +31,13 @@ struct ContentView: View {
             
             VStack(alignment: .leading) {
                 
-                // In order to use State properties
-                // You need to add a $ before calling its value
+                // In order to use a State property
+                // You need to add a $ before calling its name
                 // meaning that you create a Two-Way Binding
                 // between the property and the UI element using it, the SliderView.Slider
                 // which is now able to modify the State property
                 
-                // Here, we are creating a reusable smaller view that contains
+                // Here, we are creating a reusable smaller view
                 // Because we are passing @State property to it, we need to bind those
                 // property inside the reusable view, using the @Binding wrapper
                 SliderView(name: "Red", value: $userRed)
